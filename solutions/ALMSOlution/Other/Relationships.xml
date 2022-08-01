@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <EntityRelationship Name="business_unit_almlab_entidadtest" />
-  <EntityRelationship Name="lk_almlab_entidadtest_createdby" />
-  <EntityRelationship Name="lk_almlab_entidadtest_modifiedby" />
-  <EntityRelationship Name="owner_almlab_entidadtest" />
-  <EntityRelationship Name="team_almlab_entidadtest" />
-  <EntityRelationship Name="user_almlab_entidadtest" />
-</EntityRelationships>
