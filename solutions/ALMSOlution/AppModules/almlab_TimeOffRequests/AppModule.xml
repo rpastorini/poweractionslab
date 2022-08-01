@@ -10,7 +10,7 @@
   <ClientType>4</ClientType>
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
-    <AppModuleComponent type="1" schemaName="msdyn_timeoffrequest" />
+    <AppModuleComponent type="1" schemaName="almlab_timeoffrequest" />
     <AppModuleComponent type="62" schemaName="almlab_TimeOffRequests" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
