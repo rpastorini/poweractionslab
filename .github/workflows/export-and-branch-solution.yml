@@ -5,7 +5,8 @@ name: export-and-branch-solution
 on:
 
   repository_dispatch:
-    types: export_and_branch
+    types: [export_and_branch]
+    
     inputs:
         # Change this value
         solution_name:
