@@ -4,8 +4,6 @@ name: export-and-branch-solution
 
 on:
 
-  repository_dispatch:
-    types: [export_and_branch]
   workflow_dispatch:  
     inputs:
         # Change this value
