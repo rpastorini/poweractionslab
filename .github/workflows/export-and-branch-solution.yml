@@ -4,23 +4,23 @@ name: export-and-branch-solution
 
 on:
   repository_dispatch:
-    type: [export_and_branch]
-      #inputs:
+    #type: [export_and_branch]
+    inputs:
       # Change this value
-    solution_name:
+     solution_name:
         description: 'name of the solution to worked on from Power Platform'
         required: true
         default: ALMLab
        #Do Not change these values
-    solution_exported_folder:
+     solution_exported_folder:
         description: 'folder name for staging the exported solution *do not change*'
         required: true
         default: out/exported/
-    solution_folder:
+     solution_folder:
         description: 'staging the unpacked solution folder before check-in *do not change*'
         required: true
         default: out/solutions/
-    solution_target_folder: 
+     solution_target_folder: 
         description: 'folder name to be created and checked in *do not change*'
         required: true
         default: solutions/
