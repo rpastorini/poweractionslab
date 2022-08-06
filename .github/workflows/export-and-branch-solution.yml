@@ -4,8 +4,8 @@ name: export-and-branch-solution
 
 on:
   repository_dispatch:
-  type: [export_and_branch]
-  inputs:
+    type: [export_and_branch]
+    inputs:
       # Change this value
       solution_name:
         description: 'name of the solution to worked on from Power Platform'
