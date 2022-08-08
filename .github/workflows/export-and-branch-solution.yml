@@ -3,8 +3,8 @@ name: export-and-branch-solution
 #  unpack it and prepare, commit and push a git branch with the changes
 
 on:
-  repository_dispatch:
-    type: [export_and_branch]
+  workflow_dispatch:
+    #type: [export_and_branch]
     inputs:
       # Change this value
      solution_name:
