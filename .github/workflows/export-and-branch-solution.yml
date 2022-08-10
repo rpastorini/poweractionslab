@@ -64,6 +64,8 @@ jobs:
         solution-target-folder: ${{ github.event.client_payload.solution_target_folder}}/${{ github.event.client_payload.solution_name }}
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
+        #Setting para hacer que haga un commit directo en el brancha ppal (main).
+        branch-name: main
   
   #Invoco el WF de release.
   Release-solution-ALMLab:
