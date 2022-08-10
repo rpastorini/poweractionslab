@@ -56,4 +56,18 @@ jobs:
         solution-target-folder: ${{ github.event.client_payload.solution_target_folder}}/${{ github.event.client_payload.solution_name }}
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
+  
+  #Invoco el WF de release.
+  Release-solution-ALMLab:
+    uses: ./.github/workflows/release-solution-with-inputs.yml
+    with:
+      #You can specify the solution name here
+      solution_name: ALMLab
+      #Update your values here
+      BUILD_ENVIRONMENT_URL: https://orgcd075066.crm.dynamics.com
+      PRODUCTION_ENVIRONMENT_URL: https://org0a4498d4.crm.dynamics.com
+      CLIENT_ID: 731e4b55-60ce-4657-9633-c50d289e988f
+      TENANT_ID: a9515c49-4eef-4a66-ac15-2191fa5a441c      
+    secrets:
+      envSecret: ${{ secrets.PowerPlatformSPN }}        
 #prueba
