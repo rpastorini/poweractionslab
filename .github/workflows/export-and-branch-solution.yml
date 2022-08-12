@@ -80,8 +80,7 @@ jobs:
   
   #Invoco el WF de release.
   Release-solution-ALMLab:
-    #para evitar que corra mientras prueba de dejar la solución exportada en main
-    if: github.repository == 'octo-org/octo-repo-prod'
+    #if: github.repository == 'octo-org/octo-repo-prod'     #para evitar que corra mientras prueba de dejar la solución exportada en main
     needs: export-from-dev
     uses: ./.github/workflows/release-solution-with-inputs.yml
     with:
