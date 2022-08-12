@@ -65,10 +65,21 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
         #Setting para hacer que haga un commit directo en el brancha ppal (main).
-        #branch-name: main
+        branch-name: pp_branch
+        
+    - name: Git Merge to Main!
+      run: |
+        git checkout pp_branch
+        git checkout main
+        git merge pp_branch
+        git add .
+        git commit -m 'CI Merge'
+        git push
   
   #Invoco el WF de release.
   Release-solution-ALMLab:
+    #para evitar que corra mientras prueba de dejar la solución exportada en main
+    if: github.repository == 'octo-org/octo-repo-prod'
     needs: export-from-dev
     uses: ./.github/workflows/release-solution-with-inputs.yml
     with:
