@@ -75,6 +75,7 @@ jobs:
         git merge pp_branch
         git add .
         git commit -m 'CI Merge'
+        git push origin --delete pp_branch
         git push
   
   #Invoco el WF de release.
