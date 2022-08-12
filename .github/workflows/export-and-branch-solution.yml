@@ -65,7 +65,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
         #Setting para hacer que haga un commit directo en el brancha ppal (main).
-        branch-name: main
+        #branch-name: main
   
   #Invoco el WF de release.
   Release-solution-ALMLab:
