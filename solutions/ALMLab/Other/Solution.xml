@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.22073.190" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22082.170" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ALMLab</UniqueName>
     <LocalizedNames>
       <LocalizedName description="ALMLab" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.4</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>almlab</UniqueName>
@@ -80,13 +80,7 @@
     <RootComponents>
       <RootComponent type="1" schemaName="almlab_testentity" behavior="0" />
       <RootComponent type="62" schemaName="almlab_TestApp" behavior="0" />
-      <RootComponent type="80" schemaName="almlab_TestApp" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
-        <Dependent type="80" schemaName="almlab_TestApp" displayName="Test App" />
-      </MissingDependency>
-    </MissingDependencies>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
